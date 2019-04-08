@@ -349,3 +349,58 @@ body.loading #main .thumb { -moz-pointer-events: none; -webkit-pointer-events: n
 /* Footer */
 #footer .copyright { color: #505051; font-size: 0.9em; }
 #footer .copyright a { color: inherit; }
+
+
+/* Welcome */
+#welcome {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  height: 96vh;
+}
+#welcome .logo {
+  margin: 1em;
+  margin-top: 25vh;
+  padding: 1em;
+  font-size: 3em;
+  color: white;
+  background-color: rgba(36, 38, 41, 0.3);
+}
+#welcome .album-link {
+  margin: 1em;
+  padding: 1em;
+  font-size: 1.8em;
+  color: yellow;
+  background-color: rgba(36, 38, 41, 0.3);
+
+  cursor: pointer;
+
+  -webkit-transition: color 100ms ease-out;
+  -moz-transition: color 100ms ease-out;
+  -o-transition: color 100ms ease-out;
+  transition: color 100ms ease-out;
+}
+#welcome .album-link:hover {
+  color: blue;
+  -webkit-transition: color 500ms ease-out;
+  -moz-transition: color 500ms ease-out;
+  -o-transition: color 500ms ease-out;
+  transition: color 500ms ease-out;
+}
+
+#welcome .cover {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  flex: 1 0 auto;
+  background-image: url("images/kk.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
